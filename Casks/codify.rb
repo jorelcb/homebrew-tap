@@ -3,7 +3,7 @@ cask "codify" do
   name "codify"
   desc "MCP server & CLI that generates context, specs, and skills for AI coding agents"
   homepage "https://github.com/jorelcb/codify"
-  version "1.6.0"
+  version "1.7.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "codify" do
   on_macos do
     on_intel do
       url "https://github.com/jorelcb/codify/releases/download/v#{version}/codify_#{version}_darwin_amd64.tar.gz"
-      sha256 "8c2d3166cf7be260f753658cdc7afdfd683d92b19ce811ea4eca06d1bef3d5c4"
+      sha256 "88d2b22fa38580df0d70884e5fcc01aa782fe8b633267ed9c99a6910c9fbe0df"
     end
     on_arm do
       url "https://github.com/jorelcb/codify/releases/download/v#{version}/codify_#{version}_darwin_arm64.tar.gz"
-      sha256 "c4a5897b28e829cf7c84405b00903b773948f38fc1ed33e37956e8fdeafe3edd"
+      sha256 "f1014760956dac6ecfdea3a589762b549b3fa5a0488a8e0db5f678aabcf6ba02"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jorelcb/codify/releases/download/v#{version}/codify_#{version}_linux_amd64.tar.gz"
-      sha256 "bca0c2b82688bf5799ae33e2dcee3912d9c6e77b8f212f15e90e0e82da4619f9"
+      sha256 "c78384258c937f0662ca699a6baefbbaa39700185d351030212bf9433235145a"
     end
     on_arm do
       url "https://github.com/jorelcb/codify/releases/download/v#{version}/codify_#{version}_linux_arm64.tar.gz"
-      sha256 "8eccae27e0ea40a82b0c093a252dd4c9d61c1986c292e8715e75070e659fdf08"
+      sha256 "55727ef30b87b644644b94beccc46fc3c833b889ab272de67463a0e7896b3d8f"
     end
   end
 
