@@ -5,21 +5,21 @@
 class Codify < Formula
   desc "MCP server & CLI that generates context, specs, and skills for AI coding agents"
   homepage "https://github.com/jorelcb/codify"
-  version "2.3.0"
+  version "3.0.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorelcb/codify/releases/download/v2.3.0/codify_2.3.0_darwin_amd64.tar.gz"
-      sha256 "6d6108c640da17a4fcbc0a17ea6f4327c5f5e851ec3ec36d9308f3ac61e775d6"
+      url "https://github.com/jorelcb/codify/releases/download/v3.0.0/codify_3.0.0_darwin_amd64.tar.gz"
+      sha256 "c141b335454abe7ea60481714514cb24e67779da0f64e48afd088bbf23030c3c"
 
       define_method(:install) do
         bin.install "codify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorelcb/codify/releases/download/v2.3.0/codify_2.3.0_darwin_arm64.tar.gz"
-      sha256 "013dc62de37979a59e48987ae9a1d703ec8198cd04298343db7d5ef2bc04bf9b"
+      url "https://github.com/jorelcb/codify/releases/download/v3.0.0/codify_3.0.0_darwin_arm64.tar.gz"
+      sha256 "70c3b1984aa0de539aa50b5d8af787926b69bf11ddc4f30b0c688236f2dd7b65"
 
       define_method(:install) do
         bin.install "codify"
@@ -29,15 +29,15 @@ class Codify < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorelcb/codify/releases/download/v2.3.0/codify_2.3.0_linux_amd64.tar.gz"
-      sha256 "cb8dd77905544c3a0122f26b57b0312f85219e6852b14e68393cf3091890c648"
+      url "https://github.com/jorelcb/codify/releases/download/v3.0.0/codify_3.0.0_linux_amd64.tar.gz"
+      sha256 "103a3c9f821850f4032e3dc1212f208e7b7472ec5a3c9083cb15b18993445ced"
       define_method(:install) do
         bin.install "codify"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorelcb/codify/releases/download/v2.3.0/codify_2.3.0_linux_arm64.tar.gz"
-      sha256 "d4c5dbaa0a3b6e469c332b12cc152362928da6e40b1d6373967a188196d93020"
+      url "https://github.com/jorelcb/codify/releases/download/v3.0.0/codify_3.0.0_linux_arm64.tar.gz"
+      sha256 "034a695b81b4e1fbd4104d3472c940f2bf2d2df3e7520c4f1fd950f8a49e2730"
       define_method(:install) do
         bin.install "codify"
       end
